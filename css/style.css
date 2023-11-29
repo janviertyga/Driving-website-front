@@ -187,6 +187,9 @@
     background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
+.page-header #provisional-header {
+ background: linear-gradient(rgba(0, 0, 0, 0.75)), url(img/Provisonal1.jpg) center center no-repeat;
+}
 
 .breadcrumb-item+.breadcrumb-item::before {
     color: #999999;
@@ -348,4 +351,8 @@
 
 .copyright a:hover {
     color: var(--light);
+}
+.row .button {
+    border-radius: 6px !important;
+    width: 10px;
 }
