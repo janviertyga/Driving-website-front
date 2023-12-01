@@ -356,3 +356,8 @@
     border-radius: 6px !important;
     width: 10px;
 }
+.timer {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}

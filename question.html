@@ -24,6 +24,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="/question.css">
+    <link rel="stylesheet" href="question.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> -->
 </head>
 <body>
     <!-- Spinner Start -->
@@ -116,33 +119,30 @@
       </div>
     
     <div class="col-md-12 my-5 mb-0 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="bg-info p-5" >
+    <div class="bg-info p-5">
         <h3 style="text-align: center;" class="mb-4">Isuzuma kuruhushya rw'Agateganyo rwo gutwara ibinyabiziga</h3>
         <div class="col-md-12 quiz-container" id="quiz">
-            <div style=" padding: 1rem;" class="quiz-header">
-                <h4 id="question">Question text</h4>
-                <ul style="list-style-type:none; padding: 0;">
-                    <li style="font-size: 1.2 rem; margin: 1rem 0;">
-                        <input type="radio" id="a" name="answer" class="answer" />
-                        <label style="cursor: pointer;" id="a_text" for="a">Question</label>
-                    </li>
-                    <li style="font-size: 1.2 rem; margin: 1rem 0;">
-                        <input type="radio" id="b" name="answer" class="answer" />
-                        <label id="b_text" for="b">Question</label>
-                    </li>
-                    <li style="font-size: 1.2 rem; margin: 1rem 0;">
-                        <input type="radio" id="c" name="answer" class="answer" />
-                        <label id="c_text" for="c">Question</label>
-                    </li>
-                    <li style="font-size: 1.2 rem; margin: 1rem 0;">
-                        <input type="radio" id="d" name="answer" class="answer" />
-                        <label id="d_text" for="d">Question</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-             <button type="button" class="btn btn-success" id="submit">Komeza</button>   
-            </div>
+            <div class="content">
+                <div class="container-fluid">
+                <div class="row">
+                <div class="col-sm-12">
+                <div id="result" class="quiz-body">
+                <form name="quizForm" onSubmit="">
+                <fieldset class="form-group">
+                <h4><span id="qid">1.</span> <span id="question"></span></h4>
+                <div class="option-block-container" id="question-options">
+                </div> <!-- End of option block -->
+                </fieldset>
+                <button name="previous" id="previous" class="btn btn-success">Previous</button>
+                &nbsp;
+                <button name="next" id="next" class="btn btn-success">Next</button>
+                <!-- <button id="restart" class="btn btn-success">Restart</button> -->
+                </form>
+                </div>
+                </div> <!-- End of col-sm-12 -->
+                </div> <!-- End of row -->
+                </div> <!-- ENd of container fluid -->
+                </div> <!-- End of content -->
         <!-- </div> -->
     </div>
 </div>
@@ -228,6 +228,9 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="question.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

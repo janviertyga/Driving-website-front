@@ -46,6 +46,7 @@ const quizData = [
     const c_text = document.getElementById("c_text");
     const d_text = document.getElementById("d_text");
     const submitBtn = document.getElementById("submit");
+    let restart = document.getElementById("restart");
     
     let currentQuiz = 0;
     let score = 0;
@@ -93,3 +94,20 @@ const quizData = [
         }
         }
         });
+    
+    let currentQuestionIndex = 0;
+        let timerInterval;
+
+        function startTimer() {
+            let timeRemaining = 120; // 2 minutes * 60 seconds/minute
+
+            timerInterval = setInterval(() => {
+                if (timeRemaining === 0) {
+                    clearInterval(timerInterval);
+                    showNextQuestion();
+                } else {
+                    document.getElementById("timer").innerHTML = `Time Remaining: ${timeRemaining} seconds`;
+                    timeRemaining--;
+                }
+            }, 1000);
+        }
